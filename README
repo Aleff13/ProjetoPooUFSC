@@ -1,0 +1,26 @@
+# visitar url ==> page.goto("url")
+
+# clicar em elemetos ==> page.click("#id")
+
+# inserir inputs ==> page.fill("#id", "texto")
+
+# alerts ==> Antes da ação ocorrer coloque o : page.on("dialog", lambda dialog: dialog.accept())
+
+#---------------------------------------------------------------
+
+# assincrono
+
+# import asyncio
+# from playwright.async_api import async_playwright
+
+# async def main():
+#     async with async_playwright() as p:
+#         safari = await p.webkit.launch(headless=False, slow_mo=1000)
+#         page = await safari.new_page()
+#         await page.goto("http://localhost/Tela_de_login/")
+#         await page.fill("#email", "Olaff@email.com")
+#         await page.fill("#password", "123123")
+#         await page.click("#submit")
+#         await page.screenshot(path="sucesso.png")
+
+# asyncio.run(main())
